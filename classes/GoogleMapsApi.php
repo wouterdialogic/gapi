@@ -7,7 +7,9 @@ class GoogleMapsApi {
 	public $url_required_parts = [
 		'google_api_places' => 'https://maps.googleapis.com/maps/api/place/nearbysearch/',
 		'format' => 'json',
-		'key' => 'AIzaSyB4LeZepSN7SlYT3ayLJjFJ7cp06eXImWE',
+		'key' => 'AIzaSyCTCjA5eCYvsH7g8bO4ExKtOpcWlvfTMVE', //dialogicdevelopers@gmail
+		//'key' => 'AIzaSyB4LeZepSN7SlYT3ayLJjFJ7cp06eXImWE', //wouter.koppers@gmail
+		
 		'location_x' => '51.4736171',
 		'location_y' => '5.6180959',
 		'radius' => 5000,
@@ -59,8 +61,6 @@ class GoogleMapsApi {
 				$url .= "&$key=$url_optional_part";
 			}
 		} 
-
-		echo "<br>URL: ".$url;
 
 		return $url;
 	}
